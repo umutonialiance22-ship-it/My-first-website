@@ -1,0 +1,61 @@
+<form action="/submit" method="POST">
+    <div>
+        <label for="Full name">
+            Full name:
+            <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" required>
+        </label>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="Email">
+            Email:
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </label>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="phone number">
+            Phone number:
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        </label>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for ="subject category">
+            subject category:
+
+        </label>
+        <select name="subject category" id="select subject category">
+            <option>customer support</option>
+            <option>sales inquiry</option>
+            <option>general question</option>
+
+
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>prefered contact method</legend>
+            <input type="radio" name="contact method" id="email" value="email">
+            <label for="email">Email</label>
+            <input type="radio" name="contact method" id="phone" value="phone">
+            <label for="phone">Phone</label>
+        </fieldset>
+        <br>
+        <br>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" rows="4" cols="50" placeholder="Enter your message here..." required></textarea>
+        </div>
+        <br>
+        <br>
+        <div>
+            <button type="submit">Submit form</button>
+            <button type="reset">Reset form</button>
+        </div>
+    </div>
+
+</form>
